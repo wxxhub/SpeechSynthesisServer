@@ -4,6 +4,7 @@
 # python3
 
 pip3 install -r requirement.txt
+pip3 install -r speech_synthesis/requirement.txt
 python3 app.py
 ```
 
