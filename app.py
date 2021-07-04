@@ -1,11 +1,9 @@
 #coding:utf-8
 
-from flask import (Flask, jsonify, make_response, request, send_file,
-                   send_from_directory, render_template)
+from flask import (Flask, jsonify, make_response, render_template, request,
+                   send_file, send_from_directory)
 
 from src.speech_worker import SpeechWorker
-
-import os
 
 app = Flask(__name__)
 
