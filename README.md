@@ -1,8 +1,12 @@
 # SpeechSynthesisServer
 # 语音合成服务，支持docker部署
 
-```shell
-# python3
+```shell 
+
+git submodule init
+git submodule update
+
+# python3 
 
 pip3 install -r requirement.txt
 pip3 install -r speech_synthesis/requirement.txt
