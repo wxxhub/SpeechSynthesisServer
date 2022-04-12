@@ -21,7 +21,6 @@ def speech_synthesis():
 
     if not ok:
         return '合成失败'
-    
     path = SpeechWorker.getCachePath()
     response = make_response(send_from_directory(path,file_name.encode('utf-8').decode('utf-8'),as_attachment=True))
     response.headers["Content-Disposition"] = "attachment; filename={}".format(file_name.encode().decode('latin-1'))

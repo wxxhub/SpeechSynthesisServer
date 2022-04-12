@@ -11,5 +11,5 @@ RUN pip install -r speech_synthesis/requirement.txt
 # 对外暴露端口
 EXPOSE 8888
 
-ENTRYPOINT ["python"]doc
-CMD ["app.py"]
+#ENTRYPOINT ["python"]
+CMD ["python","app.py"]
