@@ -23,3 +23,12 @@ docker run -d --name speech_syntheis_server -p 8888:8888 speech_synthesis_server
 docker pull registry.cn-beijing.aliyuncs.com/wxxhub/speech_synthesis:latest
 docker run -d --name speech_synthesis -p 8888:8888 registry.cn-beijing.aliyuncs.com/wxxhub/speech_synthesis:latest
 ```
+
+# 使用
+```
+浏览器访问 127.0.0.1:8888
+
+#或者终端使用curl,（window因为编码问题可能失败）
+curl -X POST -F content="你好世界" 127.0.0.1:8889/speech_synthesis -o te
+st.wav
+```
