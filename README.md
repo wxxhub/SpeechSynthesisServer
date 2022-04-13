@@ -18,7 +18,7 @@ docker build -t speech_synthesis_server:latest .
 docker run -d --name speech_syntheis_server -p 8888:8888 speech_synthesis_server:latest
 ```
 
-# 使用docker镜像
+# 使用已经打包好的docker镜像
 ```
 docker pull registry.cn-beijing.aliyuncs.com/wxxhub/speech_synthesis:latest
 docker run -d --name speech_synthesis -p 8888:8888 registry.cn-beijing.aliyuncs.com/wxxhub/speech_synthesis:latest
