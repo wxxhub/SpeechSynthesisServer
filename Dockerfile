@@ -5,8 +5,8 @@ ADD . /app
 
 # 进入到app目录
 WORKDIR /app
-RUN pip install -r requirement.txt
-RUN pip install -r speech_synthesis/requirement.txt
+RUN pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com -r requirement.txt
+RUN pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com -r speech_synthesis/requirement.txt
 
 # 对外暴露端口
 EXPOSE 8888
