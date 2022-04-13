@@ -29,6 +29,5 @@ docker run -d --name speech_synthesis -p 8888:8888 registry.cn-beijing.aliyuncs.
 浏览器访问 127.0.0.1:8888
 
 #或者终端使用curl,（windows终端因为编码不是utf-8问题可能失败, 将终端改为utf-8即可）
-curl -X POST -F content="你好世界" 127.0.0.1:8889/speech_synthesis -o te
-st.wav
+curl -X POST -F content="你好世界" 127.0.0.1:8889/speech_synthesis -o test.wav
 ```
