@@ -5,9 +5,6 @@ ADD . /app
 
 # 进入到app目录
 WORKDIR /app
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-RUN apk add --no-cache g++
-RUN /usr/local/bin/python -m pip install --upgrade pip
 RUN pip install -r requirement.txt
 RUN pip install -r speech_synthesis/requirement.txt
 
