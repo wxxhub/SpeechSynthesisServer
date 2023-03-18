@@ -14,6 +14,12 @@ pip3 install -r speech_synthesis/requirement.txt
 python3 app.py
 ```
 
+## 如何更新为remote submodule
+```
+git submodule update --remote --recursive
+```
+
+
 ## 打包成docker镜像
 ```docker
 docker build -t speech_synthesis_server:latest .
